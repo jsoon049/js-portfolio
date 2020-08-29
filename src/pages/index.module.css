@@ -7,3 +7,13 @@ h1 {
   color: #ffffff;
   font-size: 75px;
 }
+
+section {
+  margin-top: 3em;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1066px;
+}

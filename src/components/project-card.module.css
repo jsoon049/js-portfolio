@@ -1,21 +1,19 @@
-.project_card {
-    width: 33%;
-    float: left;
-    margin-right: 30px;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-}
-
-.project_content {
-    padding: 1.25rem;
-}
-
-.demo {
-    margin-right: 11em;
-}
-
 h2, p {
     margin-top: 0;
     margin-bottom: 18px;
+}
+
+.project_card {
+    width: 47%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .5rem;
+}
+
+.project_content {
+    padding: 1em;
+}
+
+.demo {
+    margin-right: 2em;
 }
 

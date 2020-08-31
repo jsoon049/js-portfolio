@@ -1,15 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
 
 h1 {
   text-align: center;
-  color: #ffffff;
-  font-size: 75px;
+  color: crimson; 
+  font-size: 55px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 27px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1em;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 35px;
+  margin: 0;
 }
 
 p {
@@ -27,6 +42,14 @@ p {
 
 .groupB {
   background-color: beige;
+}
+
+.lineBreak {
+  border: 1px solid black;
+  margin: 1em 0;
+}
+
+#projects #project_card_container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

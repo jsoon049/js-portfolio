@@ -7,9 +7,11 @@ const ProjectCard = props => {
     <div className={style.project_card}>
       <Img fluid={props.image} alt={props.caption} />
       <div className={style.project_content}>
-        <h2>{props.title}</h2>
+        <h3>{props.title}</h3>
         <p>{props.description}</p>
-        <a href={props.demo_link} className={style.demo}>Demo</a>
+        <a href={props.demo_link} className={style.demo}>
+          Demo
+        </a>
         <a href={props.source_link}>Source Code</a>
       </div>
     </div>

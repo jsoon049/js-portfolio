@@ -1,0 +1,22 @@
+.tabHeader {
+    list-style: none;
+    padding-bottom: 10px;
+    border-left: 2px solid black;
+    padding-left: 15px;
+}
+
+.tabButton{
+    border: none;
+    background: transparent;
+}
+
+.tabButton:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.tabButton:focus{
+    outline-style: none;
+}
+.tabText {
+    font-size: 20px;
+}

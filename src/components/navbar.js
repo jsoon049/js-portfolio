@@ -8,19 +8,19 @@ const Navbar = () => {
     <nav className={style.navigation}>
       <ul>
         <li>
-          <Link to = "/#home">ABOUT</Link>
+          <Link to = "/#about">About</Link>
         </li>
         <li>
-          <Link to = "/#home">PROJECTS</Link>
+          <Link to = "/#experience">Experience</Link>
         </li>
         <li>
-          <Link to = "/#home">EXPERIENCE</Link>
+          <Link to = "/#projects">Projects</Link>
         </li>
         <li>
-          <Link to = "/#home">SKILLS</Link>
+          <Link to = "/#home">Skills</Link>
         </li>
         <li>
-          <Link to = "/#home">RESUME</Link>
+          <Link to = "/#home">Resume</Link>
         </li>
       </ul>
     </nav>

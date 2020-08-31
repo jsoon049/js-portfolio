@@ -1,12 +1,9 @@
-h2, p {
-    margin-top: 0;
-    margin-bottom: 18px;
-}
 
 .project_card {
     width: 47%;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .5rem;
+    margin: 10px 0;
 }
 
 .project_content {
@@ -16,4 +13,3 @@ h2, p {
 .demo {
     margin-right: 2em;
 }
-

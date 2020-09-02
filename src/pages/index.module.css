@@ -15,25 +15,29 @@ h1 {
 }
 
 h2 {
-  font-size: 27px;
+  font-size: 30px;
   text-align: center;
   margin: 0;
-  margin-bottom: 1em;
+  margin-bottom: .75em;
   text-decoration: underline;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 22px;
   margin: 0;
 }
 
-p {
-  font-size: 20px;
-  line-height: 30px;
+p, li, a {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+ul {
+  list-style: none;
 }
 
 .container {
-  padding: 5em 15em;
+  padding: 4em 15em;
 }
 
 .groupA {
@@ -49,8 +53,34 @@ p {
   margin: 1em 0;
 }
 
-#projects #project_card_container {
+.skills_container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 4em;
+}
+
+.contactContainer {
+  text-align: center;
+}
+
+.contactHeader {
+  font-size: 18px;
+}
+
+.contactTitle {
+  font-size: 45px;
+ 
+}
+
+.contactText {
+  padding: 0 10em;
+  margin-bottom: 2em;
+}
+
+.contactLink {
+  display: inline-block;
+  color: red;
+  text-decoration: none;
+  padding: 1em;
+  border: 1px solid red;
 }

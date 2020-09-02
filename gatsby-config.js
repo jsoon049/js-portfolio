@@ -10,35 +10,10 @@ module.exports = {
     titleTemplate: `%s · a starting point`,
     author: {
       name: `Jeremy Soong`,
-      summary: `a ballroom dancer playing at being a developer.`,
+      summary: ``,
     },
-    description: `An opinionated starter for Gatsby`,
-    url: `https://something.or.other`,
-    logo: `/logo.png`,
-    twitter: `mor10`,
-    // social
-    socialLinks: [
-      {
-        icon: "fa-github",
-        name: "Github",
-        url: "https://github.com/anubhavsrivastava",
-      },
-      {
-        icon: "fa-twitter",
-        name: "Twitter",
-        url: "https://twitter.com/onlyanubhav",
-      },
-      {
-        icon: "fa-facebook",
-        name: "Facebook",
-        url: "https://facebook.com/theanubhav",
-      },
-      {
-        icon: "fa-envelope-o",
-        name: "Email",
-        url: "mailto:anubhav.srivastava00@gmail.com",
-      },
-    ],
+    description: ``,
+    url: ``,
   },
 
   plugins: [
@@ -53,6 +28,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/assets/images`,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'data',
+        path: `./data/`,
       },
     },
     `gatsby-plugin-sharp`,

@@ -6,8 +6,13 @@ import BackgroundImage from "gatsby-background-image"
 import Navbar from "../components/navbar.js"
 import ProjectCard from "../components/project-card.js"
 import WorkExperience from "../components/work-experience.js"
+import Tabs from "../components/tabs.js"
 
-import Tabs from "../components/tab-list"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fab } from "@fortawesome/free-brands-svg-icons"
+import { fas } from "@fortawesome/free-solid-svg-icons"
+//import SkillsTag from "../components/skills-tag"
+library.add(fas, fab)
 
 const IndexPage = ({ data }) => (
   <div id="main">
@@ -56,7 +61,7 @@ const IndexPage = ({ data }) => (
       </p>
     </section>
     <section id="experience" className={`${style.groupB} ${style.container}`}>
-      <h2>Where I've Worked</h2> 
+      <h2>Where I've Worked</h2>
       <Tabs>
         <div label="Mitel">
           <WorkExperience
@@ -102,7 +107,7 @@ const IndexPage = ({ data }) => (
         <div label="Harbourfront">
           <WorkExperience
             company="Harbourfront Centre"
-            jobTitle="Web Developer CO-OP"
+            jobTitle="Web Developer Intern"
             // location="Toronto, ON"
             dates="May - August 2018"
             jobDescription="Donec egestas eros eu ultrices rhoncus. Pellentesque 
@@ -158,6 +163,46 @@ const IndexPage = ({ data }) => (
         />
       </div>
     </section>
+    <section id="skills" className={`${style.groupB} ${style.container}`}>
+      <h2>Skills</h2>
+      <div className={style.skills_container}>
+        <div>
+          <h3>Languages</h3>
+          <ul>
+            {data.languages.nodes.map(skill => (
+              <li key={skill.name}>{skill.name}</li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3>Frameworks</h3>
+          <ul>
+            {data.frameworks.nodes.map(skill => (
+              <li key={skill.name}>{skill.name}</li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul>
+            {data.tools.nodes.map(skill => (
+              <li key={skill.name}>{skill.name}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contact" className={`${style.groupA} ${style.container}`}>
+      <h2 className={style.contactHeader}>What's Next?</h2>
+      <div className={style.contactContainer}>
+      <h3 className={style.contactTitle}>Get In Touch</h3>
+      <p className={style.contactText}>
+        Whether you have an idea for a project, a possible internship
+        opportunity, or just want to chat, feel free to shoot me an email!
+      </p>
+        <a href="mailto:jsoon049@uottawa.ca" className={style.contactLink}>Say Hello</a>
+      </div>
+    </section>
   </div>
 )
 
@@ -177,6 +222,24 @@ export const data = graphql`
         fluid(quality: 100, maxWidth: 433) {
           ...GatsbyImageSharpFluid
         }
+      }
+    }
+    languages: allSkillsJson(filter: { type: { eq: "language" } }) {
+      nodes {
+        type
+        name
+      }
+    }
+    frameworks: allSkillsJson(filter: { type: { eq: "framework" } }) {
+      nodes {
+        type
+        name
+      }
+    }
+    tools: allSkillsJson(filter: { type: { eq: "tools" } }) {
+      nodes {
+        type
+        name
       }
     }
   }

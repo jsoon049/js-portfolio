@@ -1,0 +1,66 @@
+[
+	{
+		"type": "language",
+		"name": "Javascript (ES6)"
+	},
+	{
+		"type": "language",
+		"name": "HTML"
+	},
+	{
+		"type": "language",
+		"name": "CSS/Sass"
+	},
+	{
+		"type": "language",
+		"name": "Python"
+	},
+	{
+		"type": "language",
+		"name": "Java"
+	},
+	{
+		"type": "language",
+		"name": "C++"
+	},
+	{
+		"type": "language",
+		"name": "SQL"
+	},
+	{
+		"type": "framework",
+		"name": "React"
+	},
+	{
+		"type": "framework",
+		"name": "Node.js"
+	},
+	{
+		"type": "framework",
+		"name": "Gatsby.js"
+	},
+	{
+		"type": "framework",
+		"name": "Bootstrap 4"
+	},
+	{
+		"type": "tools",
+		"name": "AWS"
+	},
+	{
+		"type": "tools",
+		"name": "Bash"
+	},
+	{
+		"type": "tools",
+		"name": "Git & Github"
+	},
+	{
+		"type": "tools",
+		"name": "Gulp"
+	},
+	{
+		"type": "tools",
+		"name": "Jira & Confluence"
+	}
+]

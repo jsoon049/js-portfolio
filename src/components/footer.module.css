@@ -7,7 +7,7 @@
 .footer {
     text-align: center;
     padding: 2em;
-    background-color: lightslategrey;
+    background-color: grey;
 }
 
 .copyright {
@@ -15,5 +15,10 @@
 }
 
 .links, .copyright {
-    color: blue;
+    color: white;
+}
+
+.links:hover {
+    transform: scale(1.2);
+    color: red;
 }

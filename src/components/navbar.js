@@ -1,33 +1,66 @@
-import React from "react"
+import React, { Component } from "react"
 import { Link } from "gatsby"
-
+import styled from "styled-components"
 import style from "./navbar.module.css"
 
-const Navbar = () => {
-  return (
-    <nav className={style.navigation}>
+export default class Navbar extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      show: true,
+      scrollPos: 0,
+    }
+    this.handleScroll = this.handleScroll.bind(this)
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll)
+  }
+
+  handleScroll() {
+    const { scrollPos } = this.state
+    this.setState({
+      scrollPos: document.body.getBoundingClientRect().top,
+      show: document.body.getBoundingClientRect().top > scrollPos,
+    })
+  }
+
+  render() {
+    const NavLinks = () => (
       <ul>
-        <li>
-          <Link to = "/#about">About</Link>
-        </li>
-        <li>
-          <Link to = "/#experience">Experience</Link>
-        </li>
-        <li>
-          <Link to = "/#projects">Projects</Link>
-        </li>
-        <li>
-          <Link to = "/#skills">Skills</Link>
-        </li>
-        <li>
-          <Link to = "/#contact">Contact</Link>
-        </li>
-        <li>
-          <Link to = "/#home">Resume</Link>
-        </li>
+        {this.props.links.map((link, index) => (
+          <li key={link.name}>
+            <Link to={link.to}>{link.name}</Link>
+          </li>
+        ))}
       </ul>
-    </nav>
-  )
+    )
+
+    return (
+      <Transition>
+        <div className={`${this.state.show ? "active" : "hidden"} ${style.navbar}`}>
+          <nav>
+            <NavLinks />
+          </nav>
+        </div>
+      </Transition>
+    )
+  }
 }
 
-export default Navbar
+const Transition = styled.div`
+  .active {
+    visibility: visible;
+    transition: all 200ms ease-in;
+  }
+
+  .hidden {
+    visibility: hidden;
+    transition: all 200ms ease-out;
+    transform: translate(0, -100%);
+  }
+`

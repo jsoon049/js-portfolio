@@ -7,11 +7,11 @@
     {  
         "key": "github",
         "icon": ["fab", "github"],
-        "link": "mailto:jsoon049@uottawa.ca"
+        "link": "https://github.com/jsoon049"
     },
     {
         "key": "linkedin",
         "icon": ["fab", "linkedin-in"],
-        "link": "mailto:jsoon049@uottawa.ca"
+        "link": "https://www.linkedin.com/in/jeremy-soong/"
     }
 ]

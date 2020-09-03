@@ -2,7 +2,7 @@
     display: flex;
 }
 
-ul {
+.tab_list {
     margin-right: 3em;
     padding: 0;
 }

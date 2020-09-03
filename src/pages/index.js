@@ -7,16 +7,30 @@ import Navbar from "../components/navbar.js"
 import ProjectCard from "../components/project-card.js"
 import WorkExperience from "../components/work-experience.js"
 import Tabs from "../components/tabs.js"
+import Footer from "../components/footer.js"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { fas } from "@fortawesome/free-solid-svg-icons"
-import Footer from "../components/footer.js"
-
 library.add(fas, fab)
+
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
+
+const navlinks = [
+  { name: "About", to: "#about" },
+  { name: "Experience", to: "#experience" },
+  { name: "Projects", to: "#projects" },
+  { name: "Skills", to: "#skills" },
+  { name: "Contact", to: "#contact" },
+  { name: "Resume", to: "#" },
+];
 
 const IndexPage = ({ data }) => (
   <div id="main">
+    <Navbar links={navlinks}/>
     <BackgroundImage
       className="bg-image"
       fluid={data.headerImage.childImageSharp.fluid}
@@ -30,8 +44,7 @@ const IndexPage = ({ data }) => (
         “Choose a job you love, and you will never have to work a day in your
         life
       </h1>
-    </BackgroundImage>
-
+    </BackgroundImage> 
     <section id="about" className={`${style.groupA} ${style.container}`}>
       <h2>About Me</h2>
       <p>
@@ -44,13 +57,6 @@ const IndexPage = ({ data }) => (
         Nec quis patrioque ex, nec ne nostrud adolescens. An eos magna regione
         pericula, oporteat mandamus his cu. Vel at aliquip phaedrum, sea ne
         iudico nonumes, tantas accusam appareat vis cu.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, dolorem recteque salutatus cu sit. Oratio
-        scripta euismod vis in, debet salutatus vis ei. Nec quis patrioque ex,
-        nec ne nostrud adolescens. An eos magna regione pericula, oporteat
-        mandamus his cu. Vel at aliquip phaedrum, sea ne iudico nonumes, tantas
-        accusam appareat vis cu.
       </p>
       <p>
         Lorem ipsum dolor sit amet, dolorem recteque salutatus cu sit. Oratio

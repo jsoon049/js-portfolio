@@ -11,7 +11,8 @@ import Tabs from "../components/tabs.js"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { fas } from "@fortawesome/free-solid-svg-icons"
-//import SkillsTag from "../components/skills-tag"
+import Footer from "../components/footer.js"
+
 library.add(fas, fab)
 
 const IndexPage = ({ data }) => (
@@ -25,7 +26,6 @@ const IndexPage = ({ data }) => (
         filter: "brightness(70%)",
       }}
     >
-      <Navbar />
       <h1>
         “Choose a job you love, and you will never have to work a day in your
         life
@@ -203,6 +203,7 @@ const IndexPage = ({ data }) => (
         <a href="mailto:jsoon049@uottawa.ca" className={style.contactLink}>Say Hello</a>
       </div>
     </section>
+    <Footer/>
   </div>
 )
 

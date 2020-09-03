@@ -1,0 +1,17 @@
+[
+    {
+        "key": "email",
+        "icon": ["fas", "envelope"],
+        "link": "mailto:jsoon049@uottawa.ca"
+    },
+    {  
+        "key": "github",
+        "icon": ["fab", "github"],
+        "link": "mailto:jsoon049@uottawa.ca"
+    },
+    {
+        "key": "linkedin",
+        "icon": ["fab", "linkedin-in"],
+        "link": "mailto:jsoon049@uottawa.ca"
+    }
+]

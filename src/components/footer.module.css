@@ -1,0 +1,19 @@
+.links {
+    font-size: 25px;
+    padding-right: 1em;
+    margin-top: 0.75em;
+}
+
+.footer {
+    text-align: center;
+    padding: 2em;
+    background-color: lightslategrey;
+}
+
+.copyright {
+    margin-right: 1em;
+}
+
+.links, .copyright {
+    color: blue;
+}

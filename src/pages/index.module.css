@@ -36,6 +36,12 @@ ul {
   list-style: none;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
 .container {
   padding: 4em 15em;
 }
@@ -78,9 +84,7 @@ ul {
 }
 
 .contactLink {
-  display: inline-block;
   color: red;
-  text-decoration: none;
   padding: 1em;
   border: 1px solid red;
 }

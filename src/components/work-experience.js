@@ -5,7 +5,7 @@ const WorkExperience = props => {
   return (
     <div className={style.job_content}>
       <h3 className={style.companyName}>{props.company}</h3>
-      <h4 className={style.jobInfo}>{props.jobTitle}</h4>
+      <h4 className={style.jobTitle}>{props.jobTitle}</h4>
       <p className={style.jobDates}>{props.dates}</p>
       <p>{props.jobDescription}</p>
     </div>

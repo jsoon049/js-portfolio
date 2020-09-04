@@ -1,31 +1,32 @@
+/*Global styling */
 body {
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
   text-align: center;
-  color: crimson; 
+  color: crimson;
   font-size: 55px;
   margin-top: 0;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 22px;
   text-align: center;
   margin: 0;
-  margin-bottom: .75em;
+  margin-bottom: 0.75em;
   text-decoration: underline;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 30px;
   margin: 0;
 }
 
 p, li, a {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 ul {
@@ -40,7 +41,7 @@ a {
 }
 
 .container {
-  padding: 4em 15em;
+  padding: 2em; 
 }
 
 .groupA {
@@ -50,6 +51,7 @@ a {
 .groupB {
   background-color: beige;
 }
+/*End of global styling */
 
 .lineBreak {
   border: 1px solid black;
@@ -72,7 +74,6 @@ a {
 
 .contactTitle {
   font-size: 45px;
- 
 }
 
 .contactText {
@@ -84,4 +85,37 @@ a {
   color: red;
   padding: 1em;
   border: 1px solid red;
+}
+
+.projectCardContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* tablet */
+@media (min-width: 425px) {
+  .projectCardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    padding: 4em 6em;
+  }
+  
+}
+
+/* laptops */
+@media (min-width: 768px) {
+  .container {
+    padding: 4em 10em;
+  }
+}
+
+/* large desktops and TVs */
+@media (min-width: 1366px) {
+  .projectCardContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

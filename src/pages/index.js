@@ -41,8 +41,7 @@ const IndexPage = ({ data }) => (
       }}
     >
       <h1>
-        “Choose a job you love, and you will never have to work a day in your
-        life
+        Aspire To Inspire Before We Expire
       </h1>
     </BackgroundImage> 
     <section id="about" className={`${style.groupA} ${style.container}`}>
@@ -133,39 +132,66 @@ const IndexPage = ({ data }) => (
     </section>
     <section id="projects" className={`${style.groupA} ${style.container}`}>
       <h2>Some Things I've Built</h2>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-        }}
-      >
+      <div className={style.projectCardContainer}>
         <ProjectCard
           title="Project1"
           description="Vel at aliquip phaedrum, sea ne iudico nonumes,
           tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
           recteque salutatus cu sit. Oratio scripta euismod vis in, debet
           salutatus vis ei. Nec quis patrioque ex, nec ne nostrud adolescens."
-          image={data.cardImage.childImageSharp.fluid}
-          caption="TBD"
+          github="https://github.com/jsoon049"
+          gitIcon={["fab", "github"]}
+          demoLink="https://github.com/jsoon049"
+          demoIcon={["fas", "external-link-alt"]}
+          //image={data.cardImage.childImageSharp.fluid}
         />
         <ProjectCard
-          title="E-Commerce Website"
+          title="Project2"
           description="Vel at aliquip phaedrum, sea ne iudico nonumes,
           tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
           recteque salutatus cu sit. Oratio scripta euismod vis in, debet
           salutatus vis ei. Nec quis patrioque ex, nec ne nostrud adolescens."
-          image={data.cardImage.childImageSharp.fluid}
-          caption="TBD"
+          github="https://github.com/jsoon049"
+          gitIcon={["fab", "github"]}
+          demoLink="https://github.com/jsoon049"
+          demoIcon={["fas", "external-link-alt"]}
+          //image={data.cardImage.childImageSharp.fluid}
         />
         <ProjectCard
-          title="Future Projects"
+          title="Project3"
           description="Vel at aliquip phaedrum, sea ne iudico nonumes,
           tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
           recteque salutatus cu sit. Oratio scripta euismod vis in, debet
           salutatus vis ei. Nec quis patrioque ex, nec ne nostrud adolescens."
-          image={data.cardImage.childImageSharp.fluid}
-          caption="TBD"
+          github="https://github.com/jsoon049"
+          gitIcon={["fab", "github"]}
+          demoLink="https://github.com/jsoon049"
+          demoIcon={["fas", "external-link-alt"]}
+          //image={data.cardImage.childImageSharp.fluid}
+        />
+         <ProjectCard
+          title="Project4"
+          description="Vel at aliquip phaedrum, sea ne iudico nonumes,
+          tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
+          recteque salutatus cu sit. Oratio scripta euismod vis in, debet
+          salutatus vis ei. Nec quis patrioque ex, nec ne nostrud adolescens."
+          github="https://github.com/jsoon049"
+          gitIcon={["fab", "github"]}
+          demoLink="https://github.com/jsoon049"
+          demoIcon={["fas", "external-link-alt"]}
+          //image={data.cardImage.childImageSharp.fluid}
+        />
+         <ProjectCard
+          title="Project5" 
+          description="Vel at aliquip phaedrum, sea ne iudico nonumes,
+          tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
+          recteque salutatus cu sit. Oratio scripta euismod vis in, debet
+          salutatus vis ei. Nec quis patrioque ex, nec ne nostrud adolescens."
+          github="https://github.com/jsoon049"
+          gitIcon={["fab", "github"]}
+          demoLink="https://github.com/jsoon049"
+          demoIcon={["fas", "external-link-alt"]}
+          //image={data.cardImage.childImageSharp.fluid}
         />
       </div>
     </section>
@@ -220,13 +246,6 @@ export const data = graphql`
     headerImage: file(relativePath: { eq: "pic2.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    cardImage: file(relativePath: { eq: "pic1.jpg" }) {
-      childImageSharp {
-        fluid(quality: 100, maxWidth: 433) {
           ...GatsbyImageSharpFluid
         }
       }

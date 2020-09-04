@@ -12,6 +12,7 @@
 
 .navbar ul {
   display: flex;
+  visibility: hidden;
 }
 
 .navbar li a:hover {
@@ -24,3 +25,9 @@
   color: white;
 }
 
+/* Custom media query */
+@media (min-width: 768px) {
+  .navbar ul{
+    visibility: visible;
+  }
+}

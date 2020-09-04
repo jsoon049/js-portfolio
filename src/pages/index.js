@@ -8,6 +8,7 @@ import ProjectCard from "../components/project-card.js"
 import WorkExperience from "../components/work-experience.js"
 import Tabs from "../components/tabs.js"
 import Footer from "../components/footer.js"
+import MobileMenu from "../components/mobile-menu.js"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
@@ -20,16 +21,17 @@ if (typeof window !== "undefined") {
 }
 
 const navlinks = [
-  { name: "About", to: "#about" },
-  { name: "Experience", to: "#experience" },
-  { name: "Projects", to: "#projects" },
-  { name: "Skills", to: "#skills" },
-  { name: "Contact", to: "#contact" },
-  { name: "Resume", to: "#" },
+  { name: "ABOUT", to: "#about" },
+  { name: "EXPERIENCE", to: "#experience" },
+  { name: "PROJECTS", to: "#projects" },
+  { name: "SKILLS", to: "#skills" },
+  { name: "CONTACT", to: "#contact" },
+  { name: "RESUME", to: "#" },
 ];
 
 const IndexPage = ({ data }) => (
   <div id="main">
+    {/* <MobileMenu links={navlinks}/>   */}
     <Navbar links={navlinks}/>
     <BackgroundImage
       className="bg-image"
@@ -41,7 +43,7 @@ const IndexPage = ({ data }) => (
       }}
     >
       <h1>
-        Aspire To Inspire Before We Expire
+        Aspire To Inspire
       </h1>
     </BackgroundImage> 
     <section id="about" className={`${style.groupA} ${style.container}`}>
@@ -127,7 +129,7 @@ const IndexPage = ({ data }) => (
             Integer nec dolor mi. Sed interdum viverra est, nec ullamcorper lorem consectetur in. 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
-        </div>
+        </div> 
       </Tabs>
     </section>
     <section id="projects" className={`${style.groupA} ${style.container}`}>
@@ -143,55 +145,31 @@ const IndexPage = ({ data }) => (
           gitIcon={["fab", "github"]}
           demoLink="https://github.com/jsoon049"
           demoIcon={["fas", "external-link-alt"]}
-          //image={data.cardImage.childImageSharp.fluid}
+          techStack={["React", "Node", "Sass"]} 
         />
         <ProjectCard
           title="Project2"
           description="Vel at aliquip phaedrum, sea ne iudico nonumes,
           tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
-          recteque salutatus cu sit. Oratio scripta euismod vis in, debet
-          salutatus vis ei. Nec quis patrioque ex, nec ne nostrud adolescens."
+          recteque salutatus cu sit."
           github="https://github.com/jsoon049"
           gitIcon={["fab", "github"]}
           demoLink="https://github.com/jsoon049"
           demoIcon={["fas", "external-link-alt"]}
-          //image={data.cardImage.childImageSharp.fluid}
+          techStack={["React", "Node", "Sass"]}
         />
         <ProjectCard
           title="Project3"
-          description="Vel at aliquip phaedrum, sea ne iudico nonumes,
-          tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
-          recteque salutatus cu sit. Oratio scripta euismod vis in, debet
-          salutatus vis ei. Nec quis patrioque ex, nec ne nostrud adolescens."
+          description="Mauris eleifend tempus aliquet. Quisque ac lacus lobortis 
+          nibh congue dignissim. Nam eros dolor, ultrices eget imperdiet quis, 
+          auctor at ipsum. Pellentesque non risus libero. Quisque ornare odio 
+          sit amet augue venenatis, vel faucibus lacus maximus. Cras et nisl posuere, 
+          pulvinar ex ac, tristique ipsum. Aenean ultrices suscipit mattis.."
           github="https://github.com/jsoon049"
           gitIcon={["fab", "github"]}
           demoLink="https://github.com/jsoon049"
           demoIcon={["fas", "external-link-alt"]}
-          //image={data.cardImage.childImageSharp.fluid}
-        />
-         <ProjectCard
-          title="Project4"
-          description="Vel at aliquip phaedrum, sea ne iudico nonumes,
-          tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
-          recteque salutatus cu sit. Oratio scripta euismod vis in, debet
-          salutatus vis ei. Nec quis patrioque ex, nec ne nostrud adolescens."
-          github="https://github.com/jsoon049"
-          gitIcon={["fab", "github"]}
-          demoLink="https://github.com/jsoon049"
-          demoIcon={["fas", "external-link-alt"]}
-          //image={data.cardImage.childImageSharp.fluid}
-        />
-         <ProjectCard
-          title="Project5" 
-          description="Vel at aliquip phaedrum, sea ne iudico nonumes,
-          tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
-          recteque salutatus cu sit. Oratio scripta euismod vis in, debet
-          salutatus vis ei. Nec quis patrioque ex, nec ne nostrud adolescens."
-          github="https://github.com/jsoon049"
-          gitIcon={["fab", "github"]}
-          demoLink="https://github.com/jsoon049"
-          demoIcon={["fas", "external-link-alt"]}
-          //image={data.cardImage.childImageSharp.fluid}
+          techStack={["React", "Node", "Sass", "React"]}
         />
       </div>
     </section>

@@ -28,9 +28,10 @@ class Tab extends Component {
     return (
       <li
         className={style.tabHeader}
-        style={{
-          borderLeftColor: tabState === " tab-list-active" ? "red" : "black",
-        }}
+        // style={{
+        //   borderLeftColor: tabState === " tab-list-active" ? "red" : "black",
+        //   borderBottomColor: tabState === " tab-list-active" ? "red" : "black"
+        // }}
       >
         <button
           onClick={onClick}
@@ -38,7 +39,7 @@ class Tab extends Component {
         >
           <span
             style={{
-              color: tabState === " tab-list-active" ? "red" : "black",
+              color: tabState === " tab-list-active" ? "red" : "black"
             }}
             className={style.tabText}
           >

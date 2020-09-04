@@ -1,6 +1,6 @@
 .links {
     font-size: 25px;
-    padding-right: 1em;
+    padding: 0 .5em;
     margin-top: 0.75em;
 }
 
@@ -8,10 +8,6 @@
     text-align: center;
     padding: 2em;
     background-color: grey;
-}
-
-.copyright {
-    margin-right: 1em;
 }
 
 .links, .copyright {

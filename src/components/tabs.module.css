@@ -1,8 +1,18 @@
-.tabs {
+.tab_list {
     display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
 }
 
-.tab_list {
-    margin-right: 3em;
-    padding: 0;
+@media (min-width: 768px) {
+    .tabs {
+        display: flex;
+    }
+
+    .tab_list {
+        margin-right: 3em;
+        padding: 0;
+        display: block; 
+        padding-left: 0; 
+    }
 }

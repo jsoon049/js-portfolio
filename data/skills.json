@@ -5,11 +5,11 @@
 	},
 	{
 		"type": "language",
-		"name": "HTML"
+		"name": "CSS/Sass"
 	},
 	{
 		"type": "language",
-		"name": "CSS/Sass"
+		"name": "HTML"
 	},
 	{
 		"type": "language",
@@ -53,11 +53,11 @@
 	},
 	{
 		"type": "tools",
-		"name": "Git & Github"
+		"name": "Gulp"
 	},
 	{
 		"type": "tools",
-		"name": "Gulp"
+		"name": "Git & Github"
 	},
 	{
 		"type": "tools",

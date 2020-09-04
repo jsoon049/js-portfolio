@@ -16,6 +16,9 @@ const ProjectCard = props => {
       </div>
       <h3>{props.title}</h3>
       <p>{props.description}</p>
+      <ul>
+        {props.techStack.map((tool, index) => (<li key={index}>{tool}</li>))}
+      </ul>
     </div>
   )
 }

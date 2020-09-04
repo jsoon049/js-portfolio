@@ -20,11 +20,11 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 28px;
   margin: 0;
 }
 
-p, li, a {
+p, li, a, span {
   font-size: 16px;
   line-height: 20px;
 }
@@ -59,9 +59,7 @@ a {
 }
 
 .skills_container {
-  display: flex;
-  justify-content: space-evenly;
-  margin-left: 4em;
+  text-align: center;
 }
 
 .contactContainer {
@@ -73,11 +71,10 @@ a {
 }
 
 .contactTitle {
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .contactText {
-  padding: 0 7em;
   margin-bottom: 2em;
 }
 
@@ -95,26 +92,56 @@ a {
   grid-template-columns: repeat(1, 1fr);
 }
 
-/* tablet */
+/* Small Breakpoint */
 @media (min-width: 425px) {
+  .container {
+    padding: 4em 5em; 
+  }
+}
+
+/* Medium Breakpoint */
+@media (min-width: 768px) {
+  .container {
+    padding: 4em 7em;
+  }
+  .contactText {
+    padding: 0 6em;
+  }
+  .contactTitle {
+    font-size: 45px;
+  }
+  .skills_container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/* Large Breakpoint */
+@media (min-width: 1024px) {
+  .container {
+    padding: 4em 9em;
+  }
+  .contactText {
+    padding: 0 12em;
+  }
+}
+
+/* X-Large Breakpoint */
+@media (min-width: 1366px) {
+  .container {
+    padding: 4em 16em;
+  }
+}
+
+/* Custom media query */
+@media (min-width: 640px) {
   .projectCardContainer {
     grid-template-columns: repeat(2, 1fr);
   }
-  .container {
-    padding: 4em 6em;
-  }
-  
 }
 
-/* laptops */
-@media (min-width: 768px) {
-  .container {
-    padding: 4em 10em;
-  }
-}
-
-/* large desktops and TVs */
-@media (min-width: 1366px) {
+/* Custom media query */
+@media (min-width: 1160px) {
   .projectCardContainer {
     grid-template-columns: repeat(3, 1fr);
   }

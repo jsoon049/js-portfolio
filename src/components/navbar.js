@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import style from "./navbar.module.css"
+import MobileMenu from "./mobile-menu.js"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -32,7 +34,7 @@ export default class Navbar extends Component {
   render() {
     const NavLinks = () => (
       <ul>
-        {this.props.links.map((link, index) => (
+        {this.props.links.map((link) => (
           <li key={link.name}>
             <Link to={link.to}>{link.name}</Link>
           </li>
@@ -40,11 +42,14 @@ export default class Navbar extends Component {
       </ul>
     )
 
+    const mobileLinks = (this.props.links)
     return (
       <Transition>
         <div className={`${this.state.show ? "active" : "hidden"} ${style.navbar}`}>
-          <nav>
-            <NavLinks />
+          <nav className={style.nav}> 
+            
+            <MobileMenu links={mobileLinks}/>
+            <NavLinks/>
           </nav>
         </div>
       </Transition>

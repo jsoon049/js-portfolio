@@ -10,8 +10,7 @@
 }
 
 .navbar .navMenuLinks {
-  display: flex;
-  visibility: hidden;
+  display: none;
 }
 
 .navbar li a:hover {
@@ -24,13 +23,30 @@
   color: white;
 }
 
+.brand {
+  display: flex;
+  padding-top: 5px;
+  padding-left: 15px;
+  color: white;  
+  font-size: 20px;
+}
+
+.logo {
+  padding-top: 15px;
+  padding-right: 10px;
+}
 /* Custom media query */
 @media (min-width: 768px) {
   .navbar .navMenuLinks{
-    visibility: visible;
+    display: flex; 
   } 
 
   .navbar {
     justify-content: flex-end;
   }
+
+  .brand {
+    padding-top: 0;
+    width: 100%;
+}
 }

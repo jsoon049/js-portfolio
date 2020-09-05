@@ -8,7 +8,6 @@ import ProjectCard from "../components/project-card.js"
 import WorkExperience from "../components/work-experience.js"
 import Tabs from "../components/tabs.js"
 import Footer from "../components/footer.js"
-import MobileMenu from "../components/mobile-menu.js"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
@@ -31,8 +30,7 @@ const navlinks = [
 
 const IndexPage = ({ data }) => (
   <div id="main">
-    {/* <MobileMenu links={navlinks}/>   */}
-    <Navbar links={navlinks}/> 
+    <Navbar links={navlinks}/>  
     <BackgroundImage
       className="bg-image"
       fluid={data.headerImage.childImageSharp.fluid}

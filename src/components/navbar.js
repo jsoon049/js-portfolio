@@ -45,16 +45,18 @@ export default class Navbar extends Component {
     const mobileLinks = this.props.links
     return (
       <Transition>
-          {/* <MobileMenu links={mobileLinks}/>    */}
           <div
             className= {` ${style.navbar} ${this.state.show ? "active" : "hidden"}`}
           > 
+            <div className={style.brand}>
+              <FontAwesomeIcon icon={['fas', 'dice-d20']} className={style.logo}/> 
+              <p>JEREMY SOONG</p> 
+            </div>
             <MobileMenu links={mobileLinks}/>  
             <nav className={style.navs}>
               <NavLinks />
             </nav>
-          </div>
-        
+          </div>      
       </Transition>
     ) 
   }

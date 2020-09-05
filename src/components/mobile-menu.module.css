@@ -21,8 +21,9 @@
 	font-size: 36px;
 	cursor: pointer;
     padding: 10px 8px;
-    right: 0;
+    right: 2%;
     top: 1%;
+    color: white;
 }
 
 .close {
@@ -37,8 +38,8 @@
 
 .menuList {
     margin: 0;
-    padding-top: 3em;
-    padding-bottom: 15em; 
+    padding-top: 4em;
+    padding-bottom: 19em; 
     background-color: white;
 }
 

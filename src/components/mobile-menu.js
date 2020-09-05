@@ -18,7 +18,7 @@ class MobileMenu extends Component {
   render() {
     const { isSidebarOpen } = this.state
     return (
-      <div className={style.menu}>
+      <div>
         <div
           className={style.menuButton}
           onClick={this.handleMenuButtonClick}

@@ -32,7 +32,7 @@ const navlinks = [
 const IndexPage = ({ data }) => (
   <div id="main">
     {/* <MobileMenu links={navlinks}/>   */}
-    <Navbar links={navlinks}/>
+    <Navbar links={navlinks}/> 
     <BackgroundImage
       className="bg-image"
       fluid={data.headerImage.childImageSharp.fluid}

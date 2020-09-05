@@ -4,13 +4,12 @@
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   background-color: grey;
   z-index: 2;
 }
 
-.navbar ul {
+.navbar .navMenuLinks {
   display: flex;
   visibility: hidden;
 }
@@ -20,14 +19,18 @@
   color: red;
 }
 
-.navbar li a {
+.navbar li .navLink {
   margin-right: 1em;
   color: white;
 }
 
 /* Custom media query */
 @media (min-width: 768px) {
-  .navbar ul{
+  .navbar .navMenuLinks{
     visibility: visible;
+  } 
+
+  .navbar {
+    justify-content: flex-end;
   }
 }

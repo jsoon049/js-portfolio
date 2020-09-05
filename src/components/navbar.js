@@ -33,39 +33,42 @@ export default class Navbar extends Component {
 
   render() {
     const NavLinks = () => (
-      <ul>
-        {this.props.links.map((link) => (
+      <ul className={style.navMenuLinks}>
+        {this.props.links.map(link => (
           <li key={link.name}>
-            <Link to={link.to}>{link.name}</Link>
+            <Link to={link.to} className={style.navLink}>{link.name}</Link>
           </li>
         ))}
       </ul>
     )
 
-    const mobileLinks = (this.props.links)
+    const mobileLinks = this.props.links
     return (
       <Transition>
-        <div className={`${this.state.show ? "active" : "hidden"} ${style.navbar}`}>
-          <nav className={style.nav}> 
-            
-            <MobileMenu links={mobileLinks}/>
-            <NavLinks/>
-          </nav>
-        </div>
+          {/* <MobileMenu links={mobileLinks}/>    */}
+          <div
+            className= {` ${style.navbar} ${this.state.show ? "active" : "hidden"}`}
+          > 
+            <MobileMenu links={mobileLinks}/>  
+            <nav className={style.navs}>
+              <NavLinks />
+            </nav>
+          </div>
+        
       </Transition>
-    )
+    ) 
   }
 }
 
 const Transition = styled.div`
   .active {
     visibility: visible;
-    transition: all 200ms ease-in;
+    transition: all 100ms ease-in;
   }
 
   .hidden {
     visibility: hidden;
-    transition: all 200ms ease-out;
+    transition: all 100ms ease-out;
     transform: translate(0, -100%);
   }
 `

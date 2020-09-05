@@ -41,8 +41,8 @@ class MobileMenu extends Component {
           <ul className={style.menuList}>
             {this.props.links.map(link => (
               <li key={link.name} className={style.menuItem}>
-                <Link to={link.to} className={style.menuLink}>
-                  {link.name}
+                <Link to={link.to} className={style.menuLink} onClick={this.handleMenuButtonClick}>
+                    {link.name}
                 </Link>
               </li>
             ))}

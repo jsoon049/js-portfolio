@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import style from "./navbar.module.css"
 import MobileMenu from "./mobile-menu.js"
@@ -36,7 +35,7 @@ export default class Navbar extends Component {
       <ul className={style.navMenuLinks}>
         {this.props.links.map(link => (
           <li key={link.name}>
-            <Link to={link.to} className={style.navLink}>{link.name}</Link>
+            <a href={link.to} className={style.navLink}>{link.name}</a> 
           </li>
         ))}
       </ul>

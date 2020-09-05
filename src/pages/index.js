@@ -14,6 +14,7 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { fas } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import resume from '/Users/jeremysoong/Desktop/js-portfolio/static/resume.pdf'  
 library.add(fas, fab)
 
 
@@ -29,7 +30,7 @@ const navlinks = [
   { name: "PROJECTS", to: "#projects" },
   { name: "SKILLS", to: "#skills" },
   { name: "CONTACT", to: "#contact" },
-  { name: "RESUME", to: '#/' },
+  { name: "RESUME", to: resume }, 
 ];
 
 const IndexPage = ({ data }) => (

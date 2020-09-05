@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
 import style from "./mobile-menu.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -39,11 +38,11 @@ class MobileMenu extends Component {
             <FontAwesomeIcon icon={("fas", "times")} />
           </div>
           <ul className={style.menuList}>
-            {this.props.links.map(link => (
+            {this.props.links.map(link => ( 
               <li key={link.name} className={style.menuItem}>
-                <Link to={link.to} className={style.menuLink} onClick={this.handleMenuButtonClick}>
+                <a href={link.to} className={style.menuLink} onClick={this.handleMenuButtonClick}>
                     {link.name}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

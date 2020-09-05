@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import style from "./index.module.css"
+import { Link } from "gatsby"
 
 import BackgroundImage from "gatsby-background-image"
 import Navbar from "../components/navbar.js"
@@ -12,7 +13,10 @@ import Footer from "../components/footer.js"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { fas } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 library.add(fas, fab)
+
+
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
@@ -21,18 +25,18 @@ if (typeof window !== "undefined") {
 
 const navlinks = [
   { name: "ABOUT", to: "#about" },
-  { name: "EXPERIENCE", to: "#experience" },
+  { name: "EXPERIENCE", to: "#experience" }, 
   { name: "PROJECTS", to: "#projects" },
   { name: "SKILLS", to: "#skills" },
   { name: "CONTACT", to: "#contact" },
-  { name: "RESUME", to: "#" },
+  { name: "RESUME", to: '#/' },
 ];
 
 const IndexPage = ({ data }) => (
   <div id="main">
-    <Navbar links={navlinks}/>  
+    <Navbar links={navlinks}/>   
     <BackgroundImage
-      className="bg-image"
+      className='bg-Image' 
       fluid={data.headerImage.childImageSharp.fluid}
       style={{
         height: "100vh",
@@ -40,9 +44,12 @@ const IndexPage = ({ data }) => (
         filter: "brightness(70%)",
       }}
     >
-      <h1>
-        Aspire To Inspire
-      </h1>
+      <h1 className={style.title}>Aspire To Inspire Before We Expire</h1>
+      <div className={style.downArrowDiv}>
+        <Link to='/#about'>
+            <FontAwesomeIcon icon={['fas', 'chevron-circle-down']} className={style.downArrow}/>
+        </Link>
+      </div>
     </BackgroundImage> 
     <section id="about" className={`${style.groupA} ${style.container}`}>
       <h2>About Me</h2>

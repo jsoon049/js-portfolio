@@ -3,14 +3,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  text-align: center;
-  color: crimson;
-  font-size: 55px;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
 h2 {
   font-size: 22px;
   text-align: center;
@@ -52,6 +44,33 @@ a {
   background-color: beige;
 }
 /*End of global styling */
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  top: 25%;
+  color: crimson;
+}
+
+.downArrowDiv {
+  width: 100%; 
+  height: 100%; 
+  text-align: center;
+  margin-right: 1em;
+}
+
+.downArrow {
+  position: absolute;
+  font-size: 45px;
+  color: white; 
+  bottom: 10%;
+}
+
+.downArrow:hover {
+  transform: scale(1.3);
+  color: red;
+}
 
 .lineBreak {
   border: 1px solid black;
@@ -97,6 +116,9 @@ a {
   .container {
     padding: 4em 5em; 
   }
+  .title {
+    font-size: 55px;
+  }
 }
 
 /* Medium Breakpoint */
@@ -114,6 +136,10 @@ a {
     display: flex;
     justify-content: space-evenly;
   }
+  .title {
+    font-size: 65px;
+    margin: 0 0.5em;
+  }
 }
 
 /* Large Breakpoint */
@@ -124,6 +150,10 @@ a {
   .contactText {
     padding: 0 12em;
   }
+  .title {
+    font-size: 75px;
+    margin: 0 1.5em;
+  }
 }
 
 /* X-Large Breakpoint */
@@ -133,16 +163,19 @@ a {
   }
 }
 
-/* Custom media query */
+/* Custom breakpoint between small and medium */
 @media (min-width: 640px) {
   .projectCardContainer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Custom media query */
+/* Custom breakpoint between large and XL */
 @media (min-width: 1160px) {
   .projectCardContainer {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .title {
+    margin: 0 3em;
   }
 }

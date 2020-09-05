@@ -23,6 +23,10 @@
   color: white;
 }
 
+.navs {
+  margin-right: 1em;
+}
+
 .brand {
   display: flex;
   padding-top: 5px;
@@ -48,5 +52,6 @@
   .brand {
     padding-top: 0;
     width: 100%;
+    padding-left: 35px;
 }
 }

@@ -6,11 +6,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: `The Project`,
-    titleTemplate: `%s · a starting point`,
+    title: `My website`,
     author: {
       name: `Jeremy Soong`,
-      summary: ``,
+      summary: `My first personal website built with GatsbyJS`,
     },
     description: ``,
     url: ``,

@@ -5,8 +5,8 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  background-color: grey;
-  z-index: 2;
+  background-color: #dbd7d4;
+  z-index: 2; 
 }
 
 .navbar .navMenuLinks {
@@ -20,7 +20,7 @@
 
 .navbar li .navLink {
   margin-right: 1em;
-  color: white;
+  color: #3D3939;
 }
 
 .navs {
@@ -31,7 +31,7 @@
   display: flex;
   padding-top: 5px;
   padding-left: 15px;
-  color: white;  
+  color: #3D3939;
   font-size: 20px;
 }
 

@@ -44,19 +44,19 @@ const IndexPage = ({ data }) => (
         backgroundRepeat: "no-repeat" 
       }}
     >
-      <h1 className={style.title}>Aspire To Inspire Before We Expire</h1> 
+      <h1 className={style.title}>Aspire To Inspire Before You Expire</h1> 
       <div className={style.downArrowDiv}>
         <Link to='/#about'>
             <FontAwesomeIcon icon={['fas', 'chevron-circle-down']} className={style.downArrow}/>
         </Link>
       </div>
     </BackgroundImage> 
-    <section id="about" className={`${style.groupA} ${style.container}`}>
-      <h2>About Me</h2>
+    <section id="about" className={`${style.about} ${style.container}`}>
+      <h2>Background</h2>
       <div>
         <p>
           Hi there! I'm Jeremy, a fourth year student studying <strong>Computer Science at University of Ottawa.</strong> I am 
-          an autodidact with a passion for gaining a deeper understanding of how the world truly works. It is my passion to 
+          an autodidact who is constantly trying to gain a deeper understanding of how the world truly works. It is my passion to 
           be able to apply this knowledge to create software that not only functions efficiently under the hood, 
           but also provides intuitive, pixel-perfect user experiences.
         </p>
@@ -71,12 +71,12 @@ const IndexPage = ({ data }) => (
         <p>
           I thrive on discovering novel methods to create seamless user experiences with clean, efficient, and scalable code. 
           I consider work an ongoing education, and I'm always looking for opportunities to work with those who are 
-          willing to share their knowledge with me. At the end of the day, my primary goal is to create something beautiful 
+          willing to share their knowledge with me. At the end of the day, my primary goal is to be able to work  
           with people that bring out the best in me. 
         </p>
       </div>
     </section>
-    <section id="experience" className={`${style.groupB} ${style.container}`}>
+    <section id="experience" className={`${style.experience} ${style.container}`}>
       <h2>Where I've Worked</h2>
       <Tabs>
         <div label="Mitel">
@@ -129,7 +129,7 @@ const IndexPage = ({ data }) => (
         </div> 
       </Tabs>
     </section>
-    <section id="projects" className={`${style.groupA} ${style.container}`}>
+    <section id="projects" className={`${style.projects} ${style.container}`}>
       <h2>Some Things I've Built</h2>
       <div className={style.projectCardContainer}>
         <ProjectCard
@@ -167,7 +167,7 @@ const IndexPage = ({ data }) => (
         />
       </div>
     </section>
-    <section id="skills" className={`${style.groupB} ${style.container}`}>
+    <section id="skills" className={`${style.skills} ${style.container}`}>
       <h2>Skills</h2>
       <div className={style.skills_container}>
         <div>
@@ -196,7 +196,7 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </section>
-    <section id="contact" className={`${style.groupA} ${style.container}`}>
+    <section id="contact" className={`${style.contact} ${style.container}`}>
       <h2 className={style.contactHeader}>What's Next?</h2>
       <div className={style.contactContainer}>
       <h3 className={style.contactTitle}>Get In Touch</h3>
@@ -209,18 +209,18 @@ const IndexPage = ({ data }) => (
     </section>
     <Footer/>
   </div>
-)
+) 
+ 
+export default IndexPage 
 
-export default IndexPage
-
-export const data = graphql` 
-  query {
-    headerImage: file(relativePath: { eq: "pic1.jpg" }) { 
+export const data = graphql`  
+  query { 
+    headerImage: file(relativePath: { eq: "main.jpg" }) { 
       childImageSharp {
-        fluid(quality: 100, maxWidth: 2000) {
+        fluid(quality: 100, maxWidth: 2000) { 
           ...GatsbyImageSharpFluid    
-        } 
-      }
+        }  
+      } 
     }
     languages: allSkillsJson(filter: { type: { eq: "language" } }) {
       nodes {
@@ -231,7 +231,7 @@ export const data = graphql`
     frameworks: allSkillsJson(filter: { type: { eq: "framework" } }) {
       nodes {
         type
-        name
+        name 
       }
     }
     tools: allSkillsJson(filter: { type: { eq: "tools" } }) {

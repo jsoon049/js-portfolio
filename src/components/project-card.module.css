@@ -20,6 +20,10 @@
     color: black;
 }
 
+.gitLink:hover, .demoLink:hover {
+    transform: scale(1.3);
+}
+
 .projectIcon {
     font-size: 40px;
 }

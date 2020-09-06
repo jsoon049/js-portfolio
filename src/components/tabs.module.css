@@ -7,6 +7,7 @@
 @media (min-width: 768px) {
     .tabs {
         display: flex;
+        width: 85%;
     }
 
     .tab_list {
@@ -14,5 +15,6 @@
         padding: 0;
         display: block; 
         padding-left: 0; 
+        margin-left: 1em;
     }
-}
+} 

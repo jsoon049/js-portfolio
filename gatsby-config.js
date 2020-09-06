@@ -35,7 +35,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: 'data',
-        path: `./data/`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-plugin-sharp`,

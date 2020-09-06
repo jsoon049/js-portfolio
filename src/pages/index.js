@@ -41,11 +41,10 @@ const IndexPage = ({ data }) => (
       fluid={data.headerImage.childImageSharp.fluid}
       style={{
         height: "100vh",
-        backgroundRepeat: "no-repeat",
-        filter: "brightness(70%)",
+        backgroundRepeat: "no-repeat" 
       }}
     >
-      <h1 className={style.title}>Aspire To Inspire Before We Expire</h1>
+      <h1 className={style.title}>Aspire To Inspire Before We Expire</h1> 
       <div className={style.downArrowDiv}>
         <Link to='/#about'>
             <FontAwesomeIcon icon={['fas', 'chevron-circle-down']} className={style.downArrow}/>
@@ -54,24 +53,28 @@ const IndexPage = ({ data }) => (
     </BackgroundImage> 
     <section id="about" className={`${style.groupA} ${style.container}`}>
       <h2>About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet, dolorem recteque salutatus cu sit. Oratio
-        scripta euismod vis in, debet salutatus vis ei. Nec quis patrioque ex,
-        nec ne nostrud adolescens. An eos magna regione pericula, oporteat
-        mandamus his cu. Vel at aliquip phaedrum, sea ne iudico nonumes, tantas
-        accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem recteque
-        salutatus cu sit. Oratio scripta euismod vis in, debet salutatus vis ei.
-        Nec quis patrioque ex, nec ne nostrud adolescens. An eos magna regione
-        pericula, oporteat mandamus his cu. Vel at aliquip phaedrum, sea ne
-        iudico nonumes, tantas accusam appareat vis cu.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, dolorem recteque salutatus cu sit. Oratio
-        scripta euismod vis in, debet salutatus vis ei. Nec quis patrioque ex,
-        nec ne nostrud adolescens. An eos magna regione pericula, oporteat
-        mandamus his cu. Vel at aliquip phaedrum, sea ne iudico nonumes, tantas
-        accusam appareat vis cu.
-      </p>
+      <div>
+        <p>
+          Hi there! I'm Jeremy, a fourth year student studying <strong>Computer Science at University of Ottawa.</strong> I am 
+          an autodidact with a passion for gaining a deeper understanding of how the world truly works. It is my passion to 
+          be able to apply this knowledge to create software that not only functions efficiently under the hood, 
+          but also provides intuitive, pixel-perfect user experiences.
+        </p>
+        <p>
+          I've been fortunate to have been given the opportunity to work for different organizations from one of the largest non-profit
+          organizations in Canada in Harbourfront Centre, to one of Canada's top mid-market technology consulting firms 
+          in MNP, and most recently I had the chance to intern at Mitel Networks Corporation, one of Canada's largest
+          telecomuncations company. Throughout all my experiences, I've acknowledged the value of keeping an open mind 
+
+          {/* I've had vast opportunities to work for different organizations; from non-profit to consulting to most recently tech. */}
+        </p>
+        <p>
+          I thrive on discovering novel methods to create seamless user experiences with clean, efficient, and scalable code. 
+          I consider work an ongoing education, and I'm always looking for opportunities to work with those who are 
+          willing to share their knowledge with me. At the end of the day, my primary goal is to create something beautiful 
+          with people that bring out the best in me. 
+        </p>
+      </div>
     </section>
     <section id="experience" className={`${style.groupB} ${style.container}`}>
       <h2>Where I've Worked</h2>
@@ -82,10 +85,10 @@ const IndexPage = ({ data }) => (
             jobTitle="Software Developer CO-OP"
             // location="Kanata, ON"
             dates="January - April 2020"
-            jobDescription="Vel at aliquip phaedrum, sea ne iudico nonumes,
-              tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
-              recteque salutatus cu sit. Oratio scripta euismod vis in, debet
-              salutatus vis ei. Nec quis patrioque ex, nec ne nostrud adolescens."
+            jobDescription=" Developed a REST API with Elixir's Phoenix framework to integrate Application-to-Person 
+            functionality to Mitel's Cloudlink SMS microservice. Implemented a wrapper class around Erlang's PO Box 
+            library to protect Elixir processes from becoming overloaded. Designed unit tests with the ExUnit framework
+            to increase the microservice’s code coverage by 10%. "
           />
         </div>
         <div label="MNP">
@@ -94,27 +97,23 @@ const IndexPage = ({ data }) => (
             jobTitle="Front-End Developer CO-OP"
             // location="Ottawa, ON"
             dates="September - December 2019"
-            jobDescription="Nullam venenatis bibendum mauris non ornare. Ut hendrerit 
-            nulla mauris. Fusce justo mi, laoreet a eleifend convallis, dictum eu metus. 
-            Sed eu dui arcu. Proin at erat ex. Nullam non luctus libero, a finibus arcu. 
-            Praesent ornare, nibh eleifend tincidunt sodales, augue nisl aliquam erat, eu 
-            convallis libero magna a eros. Nunc fringilla ante non dapibus commodo. Ut id 
-            quam id turpis venenatis aliquam. Suspendisse orci felis, tincidunt quis 
-            sollicitudin at, mattis ut justo. Vivamus varius, lorem sit amet mattis molestie, 
-            odio nulla molestie ligula, posuere dapibus massa quam vitae ante."
+            jobDescription=" Developed mobile-first components in an Agile environment to rebrand and modernize 
+            the MNP Debt website. Participated in code reviews and fixed bugs to ensure thoughtful and coherent user 
+            experience across the website. Collaborated with the head front-end developer, UX designer, 
+            and client stakeholders to develop technical solutions for business cases.
+            "
           />
           <hr className={style.lineBreak}></hr>
           <WorkExperience
             jobTitle="Analyst Developer CO-OP"
             // location="Ottawa, ON"
             dates="May - September 2019"
-            jobDescription="Fusce at sem vulputate, eleifend risus sit amet, 
-            imperdiet sem. Vestibulum ante ipsum primis in faucibus orci luctus et 
-            ultrices posuere cubilia curae; Vivamus quis arcu nunc. Vestibulum ante 
-            ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
-            Vestibulum mi tortor, suscipit eget leo nec, ullamcorper vehicula risus. 
-            Quisque nec ultrices tellus, vitae consequat urna. Integer sit amet odio 
-            tempus, sodales lacus sit amet, ultricies mi."
+            jobDescription=" Assisted developing a plugin for internal use within Enterprise Architect 
+            using the .NET framework for CRM architects to better manage the design, configuration and 
+            development of Microsoft Dynamics solutions. Developed and maintained code for client 
+            websites using HTML, Sass, Bootstrap 4, JavaScript, and jQuery. Performed Microsoft Dynamics 
+            365 customization activities based on client needs.
+            "
           />
         </div>
         <div label="Harbourfront">
@@ -123,17 +122,9 @@ const IndexPage = ({ data }) => (
             jobTitle="Web Developer Intern"
             // location="Toronto, ON"
             dates="May - August 2018"
-            jobDescription="Donec egestas eros eu ultrices rhoncus. Pellentesque 
-            lacinia congue risus, pretium sollicitudin mauris dictum at. Nunc 
-            pulvinar posuere sagittis. In imperdiet, felis id dictum bibendum, 
-            odio metus lobortis sapien, quis placerat eros diam quis ipsum. Nunc 
-            tortor augue, fringilla vel faucibus vel, euismod at tellus. Mauris a 
-            leo ac orci sodales eleifend eget non lectus. Etiam auctor ornare 
-            sollicitudin. Fusce vehicula, dolor vitae varius placerat, urna nunc 
-            cursus nulla, ut semper ante arcu at urna. Aenean placerat id lorem a 
-            scelerisque. Cras et lorem mauris. Cras ut erat et mauris varius scelerisque ac ac mi. 
-            Integer nec dolor mi. Sed interdum viverra est, nec ullamcorper lorem consectetur in. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            jobDescription=" Developed an internal Employee & Equipment Directory web application for the IT department
+            using HTML, CSS, JavaScript, and PHP. Generated queries with SQL to store and access information 
+            from the SQL Server database."
           />
         </div> 
       </Tabs>
@@ -143,10 +134,9 @@ const IndexPage = ({ data }) => (
       <div className={style.projectCardContainer}>
         <ProjectCard
           title="Project1"
-          description="Vel at aliquip phaedrum, sea ne iudico nonumes,
-          tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
-          recteque salutatus cu sit. Oratio scripta euismod vis in, debet
-          salutatus vis ei. Nec quis patrioque ex, nec ne nostrud adolescens."
+          description="Morbi neque diam, interdum eget varius dignissim, gravida et libero. 
+          Nulla id ultricies velit. Fusce ut massa quis odio interdum auctor vitae a nisl. 
+          Pellentesque ut nulla sed mi cursus egestas. Etiam ut tincidunt tortor."
           github="https://github.com/jsoon049"
           gitIcon={["fab", "github"]}
           demoLink="https://github.com/jsoon049"
@@ -155,9 +145,8 @@ const IndexPage = ({ data }) => (
         />
         <ProjectCard
           title="Project2"
-          description="Vel at aliquip phaedrum, sea ne iudico nonumes,
-          tantas accusam appareat vis cu.Lorem ipsum dolor sit amet, dolorem
-          recteque salutatus cu sit."
+          description="Morbi neque diam, interdum eget varius dignissim, gravida et libero. 
+          Nulla id ultricies velit. Pellentesque ut nulla sed mi cursus egestas. Etiam ut tincidunt tortor."
           github="https://github.com/jsoon049"
           gitIcon={["fab", "github"]}
           demoLink="https://github.com/jsoon049"
@@ -166,11 +155,10 @@ const IndexPage = ({ data }) => (
         />
         <ProjectCard
           title="Project3"
-          description="Mauris eleifend tempus aliquet. Quisque ac lacus lobortis 
-          nibh congue dignissim. Nam eros dolor, ultrices eget imperdiet quis, 
-          auctor at ipsum. Pellentesque non risus libero. Quisque ornare odio 
-          sit amet augue venenatis, vel faucibus lacus maximus. Cras et nisl posuere, 
-          pulvinar ex ac, tristique ipsum. Aenean ultrices suscipit mattis.."
+          description="Morbi neque diam, interdum eget varius dignissim, gravida et libero. 
+          Nulla id ultricies velit. Fusce ut massa quis odio interdum auctor vitae a nisl. 
+          Pellentesque ut nulla sed mi cursus egestas. Etiam ut tincidunt tortor. 
+          Vestibulum id sem ut turpis convallis varius non sit amet risus. "
           github="https://github.com/jsoon049"
           gitIcon={["fab", "github"]}
           demoLink="https://github.com/jsoon049"
@@ -225,13 +213,13 @@ const IndexPage = ({ data }) => (
 
 export default IndexPage
 
-export const data = graphql`
+export const data = graphql` 
   query {
-    headerImage: file(relativePath: { eq: "pic2.jpg" }) {
+    headerImage: file(relativePath: { eq: "pic1.jpg" }) { 
       childImageSharp {
         fluid(quality: 100, maxWidth: 2000) {
-          ...GatsbyImageSharpFluid
-        }
+          ...GatsbyImageSharpFluid    
+        } 
       }
     }
     languages: allSkillsJson(filter: { type: { eq: "language" } }) {

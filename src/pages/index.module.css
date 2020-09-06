@@ -17,7 +17,7 @@ h3 {
 }
 
 p, li, a, span {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 20px;
 }
 
@@ -159,7 +159,7 @@ a {
 /* X-Large Breakpoint */
 @media (min-width: 1366px) {
   .container {
-    padding: 4em 16em;
+    padding: 4em 18em;
   }
 }
 

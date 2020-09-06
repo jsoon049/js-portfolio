@@ -23,7 +23,7 @@
     padding: 10px 8px;
     right: 2%;
     top: 1%;
-    color: white;
+    color: #3D3939;
 }
 
 .close {
@@ -33,14 +33,15 @@
     cursor: pointer;
     font-size: 3rem;
 	font-weight: bold;
-	color: #AAA;
+    color: #3D3939;
+    background-color: #dbd7d4;
 }
 
 .menuList {
     margin: 0;
     padding-top: 4em;
     padding-bottom: 19em; 
-    background-color: white;
+    background-color: #dbd7d4;
 }
 
 .menuLink {
@@ -50,7 +51,11 @@
 	color: #555;
 	padding: 16px 10px;
     font-size: 24px;
-	/* border-bottom: 1px solid #555; */
+}
+
+.menuLink:hover {
+    text-decoration: underline;
+    background-color: rgba(0,0,0,0.3); 
 }
 
 /* Custom media query */

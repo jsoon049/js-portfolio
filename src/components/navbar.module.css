@@ -23,10 +23,6 @@
   color: #3D3939;
 }
 
-.navs {
-  margin-right: 1em;
-}
-
 .brand {
   display: flex;
   padding-top: 5px;
@@ -39,7 +35,7 @@
   padding-top: 15px;
   padding-right: 10px;
 }
-/* Custom media query */
+
 @media (min-width: 768px) {
   .navbar .navMenuLinks{
     display: flex; 
@@ -52,6 +48,6 @@
   .brand {
     padding-top: 0;
     width: 100%;
-    padding-left: 35px;
-}
+    padding-left: 25px;
+  }
 }

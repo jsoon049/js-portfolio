@@ -61,15 +61,14 @@ const IndexPage = ({ data }) => (
           but also provides intuitive, pixel-perfect user experiences.
         </p>
         <p>
-          I've been fortunate to have been given the opportunity to work for different organizations from one of the largest non-profit
-          organizations in Canada in Harbourfront Centre, to one of Canada's top mid-market technology consulting firms 
-          in MNP, and most recently I had the chance to intern at Mitel Networks Corporation, one of Canada's largest
-          telecomuncations company. Throughout all my experiences, I've acknowledged the value of keeping an open mind 
-
-          {/* I've had vast opportunities to work for different organizations; from non-profit to consulting to most recently tech. */}
+          I have been very fortunate and grateful, to have been given the opportunity to work for different organizations 
+          such as <strong>Harbourfront Centre</strong>, one of the largest and renowned non-profit organizations in Canada, 
+          to a top mid-market technology consulting firm in <strong>MNP LLP </strong>and most recently at <strong>
+          Mitel Networks Corporation</strong>, one of Canada’s largest telecommunications companies. The valuable work experiences have allowed me to utilize and hone my skills, 
+          gain a thorough understanding of the contrasting work environments and the importance of keeping an open mind.
         </p>
         <p>
-          I thrive on discovering novel methods to create seamless user experiences with clean, efficient, and scalable code. 
+          I thrive on discovering novel methods to write clean, efficient, and scalable code. 
           I consider work an ongoing education, and I'm always looking for opportunities to work with those who are 
           willing to share their knowledge with me. At the end of the day, my primary goal is to be able to work  
           with people that bring out the best in me. 
@@ -133,37 +132,31 @@ const IndexPage = ({ data }) => (
       <h2>Some Things I've Built</h2>
       <div className={style.projectCardContainer}>
         <ProjectCard
-          title="Project1"
-          description="Morbi neque diam, interdum eget varius dignissim, gravida et libero. 
-          Nulla id ultricies velit. Fusce ut massa quis odio interdum auctor vitae a nisl. 
-          Pellentesque ut nulla sed mi cursus egestas. Etiam ut tincidunt tortor."
+          title="E-Commerce Website" 
+          description="Built an e-commerce website with paypal authorization."
           github="https://github.com/jsoon049"
           gitIcon={["fab", "github"]}
           demoLink="https://github.com/jsoon049"
           demoIcon={["fas", "external-link-alt"]}
-          techStack={["React", "Node", "Sass"]} 
+          techStack={["React", "Node.js", "Sass", "Firebase"]} 
         />
         <ProjectCard
-          title="Project2"
-          description="Morbi neque diam, interdum eget varius dignissim, gravida et libero. 
-          Nulla id ultricies velit. Pellentesque ut nulla sed mi cursus egestas. Etiam ut tincidunt tortor."
-          github="https://github.com/jsoon049"
+          title="15 Puzzle Game"
+          description="Implementation of the 15 Puzzle game using HTML, CSS, and Javascript."
+          github="https://github.com/jsoon049/15PuzzleGame"
           gitIcon={["fab", "github"]}
           demoLink="https://github.com/jsoon049"
           demoIcon={["fas", "external-link-alt"]}
-          techStack={["React", "Node", "Sass"]}
+          techStack={["HTML", "CSS", "Javascript"]}
         />
-        <ProjectCard
-          title="Project3"
-          description="Morbi neque diam, interdum eget varius dignissim, gravida et libero. 
-          Nulla id ultricies velit. Fusce ut massa quis odio interdum auctor vitae a nisl. 
-          Pellentesque ut nulla sed mi cursus egestas. Etiam ut tincidunt tortor. 
-          Vestibulum id sem ut turpis convallis varius non sit amet risus. "
+         <ProjectCard
+          title="Weather App"
+          description="Under construction. Stay tuned!"
           github="https://github.com/jsoon049"
           gitIcon={["fab", "github"]}
-          demoLink="https://github.com/jsoon049"
-          demoIcon={["fas", "external-link-alt"]}
-          techStack={["React", "Node", "Sass", "React"]}
+          // demoLink="https://github.com/jsoon049"
+          // demoIcon={["fas", "external-link-alt"]}
+          techStack={["Python"]}
         />
       </div>
     </section>

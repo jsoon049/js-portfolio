@@ -5,7 +5,7 @@ body {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   margin: 0;
   margin-bottom: 0.75em;
@@ -13,7 +13,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 25px;
   margin: 0;
 }
 
@@ -176,7 +176,7 @@ a {
 /* X-Large Breakpoint */
 @media (min-width: 1366px) {
   .container {
-    padding: 4em 18em;
+    padding: 4em 16em;
   }
 }
 

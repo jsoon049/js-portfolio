@@ -136,7 +136,7 @@ const IndexPage = ({ data }) => (
         <div className={style.projectCardContainer}>
           <ProjectCard
             title="E-Commerce Website"
-            description="Built an e-commerce website with paypal authorization."
+            description="Under construction. Stay tuned!"
             github="https://github.com/jsoon049"
             gitIcon={["fab", "github"]}
             demoLink="https://github.com/jsoon049"

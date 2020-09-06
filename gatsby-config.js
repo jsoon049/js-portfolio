@@ -9,9 +9,8 @@ module.exports = {
     title: `My website`,
     author: {
       name: `Jeremy Soong`,
-      summary: `My first personal website built with GatsbyJS`,
     },
-    description: ``,
+    description: `My first personal website built with GatsbyJS`,
     url: ``,
   },
 

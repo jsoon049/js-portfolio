@@ -135,31 +135,31 @@ const IndexPage = ({ data }) => (
         <h2>Some Things I've Built</h2>
         <div className={style.projectCardContainer}>
           <ProjectCard
-            title="E-Commerce Website"
+            title="Booking Event App"
             description="Under construction. Stay tuned!"
+            // github="https://github.com/jsoon049"
+            // gitIcon={["fab", "github"]}
+            // demoLink="https://github.com/jsoon049"
+            // demoIcon={["fas", "external-link-alt"]}
+            techStack={["React", "Node.js", "Sass", "GraphQL"]}
+          />
+          <ProjectCard
+            title="Movie Database App"
+            description="App to search for movies using the OMDb API."
             github="https://github.com/jsoon049"
             gitIcon={["fab", "github"]}
-            demoLink="https://github.com/jsoon049"
+            demoLink="https://movie-app-js.netlify.app"
             demoIcon={["fas", "external-link-alt"]}
-            techStack={["React", "Node.js", "Sass", "Firebase"]}
+            techStack={["React", 'Sass']}
           />
           <ProjectCard
             title="15 Puzzle Game"
             description="Implementation of the 15 Puzzle game using HTML, CSS, and Javascript."
             github="https://github.com/jsoon049/15PuzzleGame"
             gitIcon={["fab", "github"]}
-            demoLink="https://github.com/jsoon049"
-            demoIcon={["fas", "external-link-alt"]}
-            techStack={["HTML", "CSS", "Javascript"]}
-          />
-          <ProjectCard
-            title="Weather App"
-            description="Under construction. Stay tuned!"
-            github="https://github.com/jsoon049"
-            gitIcon={["fab", "github"]}
             // demoLink="https://github.com/jsoon049"
             // demoIcon={["fas", "external-link-alt"]}
-            techStack={["Python"]}
+            techStack={["HTML", "CSS", "Javascript"]}
           />
         </div>
       </section>

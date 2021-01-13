@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import style from "./index.module.css"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import BackgroundImage from "gatsby-background-image"
 import ProjectCard from "../components/project-card.js"
@@ -22,7 +23,9 @@ if (typeof window !== "undefined") {
 
 const IndexPage = ({ data }) => (
   <div id="main">
-    <meta name="google-site-verification" content="NSkRFvmki8mqdpsAV7-lubMPjfvXmuVtbuNKrx6MlE8"/>
+    <Helmet>
+      <meta name="google-site-verification" content="NSkRFvmki8mqdpsAV7-lubMPjfvXmuVtbuNKrx6MlE8"/>
+    </Helmet>
     <Layout>
       <BackgroundImage
         className="bg-Image"

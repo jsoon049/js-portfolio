@@ -22,6 +22,7 @@ if (typeof window !== "undefined") {
 
 const IndexPage = ({ data }) => (
   <div id="main">
+    <meta name="google-site-verification" content="NSkRFvmki8mqdpsAV7-lubMPjfvXmuVtbuNKrx6MlE8"/>
     <Layout>
       <BackgroundImage
         className="bg-Image"

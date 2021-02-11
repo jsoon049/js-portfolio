@@ -1,6 +1,14 @@
 [
 	{
 		"type": "language",
+		"name": "Python"
+	},
+	{
+		"type": "language",
+		"name": "Java"
+	},
+	{
+		"type": "language",
 		"name": "Javascript (ES6)"
 	},
 	{
@@ -13,23 +21,27 @@
 	},
 	{
 		"type": "language",
-		"name": "Python"
-	},
-	{
-		"type": "language",
-		"name": "Java"
-	},
-	{
-		"type": "language",
 		"name": "C++"
+	},
+	{
+		"type": "language",
+		"name": "Golang"
 	},
 	{
 		"type": "language",
 		"name": "SQL"
 	},
 	{
+		"type": "language",
+		"name": "GraphQL"
+	},
+	{
 		"type": "framework",
 		"name": "React"
+	},
+	{
+		"type": "framework",
+		"name": "React Native"
 	},
 	{
 		"type": "framework",
@@ -44,23 +56,27 @@
 		"name": "Bootstrap 4"
 	},
 	{
+		"type": "framework",
+		"name": "Scikit-learn"
+	},
+	{
 		"type": "tools",
 		"name": "AWS"
 	},
 	{
 		"type": "tools",
-		"name": "Bash"
+		"name": "Linux"
 	},
 	{
 		"type": "tools",
-		"name": "Gulp"
-	},
-	{
-		"type": "tools",
-		"name": "Git & Github"
+		"name": "Git"
 	},
 	{
 		"type": "tools",
 		"name": "Jira & Confluence"
+	},
+	{
+		"type": "tools",
+		"name": "PostgreSQL"
 	}
 ]

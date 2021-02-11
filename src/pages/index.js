@@ -102,24 +102,19 @@ const IndexPage = ({ data }) => (
               company="MNP LLP"
               jobTitle="Front-End Developer CO-OP"
               // location="Ottawa, ON"
-              dates="September - December 2019"
-              jobDescription=" Developed mobile-first components in an Agile environment to rebrand and modernize 
-            the MNP Debt website. Participated in code reviews and fixed bugs to ensure thoughtful and coherent user 
-            experience across the website. Collaborated with the head front-end developer, UX designer, 
-            and client stakeholders to develop technical solutions for business cases.
-            "
+              dates="July - December 2019"
+              jobDescription=" Implemented a mobile-first design approach to develop custom components used to rebrand and modernize
+              the MNP Debt website. Developed, maintained, and debugged new and existing React components across multiple client websites. 
+              Participated in code reviews and fixed bugs to ensure coherent user experience."
             />
             <hr className={style.lineBreak}></hr>
             <WorkExperience
               jobTitle="Analyst Developer CO-OP"
               // location="Ottawa, ON"
-              dates="May - September 2019"
+              dates="May - July 2019"
               jobDescription=" Assisted developing a plugin for internal use within Enterprise Architect 
             using the .NET framework for CRM architects to better manage the design, configuration and 
-            development of Microsoft Dynamics solutions. Developed and maintained code for client 
-            websites using HTML, Sass, Bootstrap 4, JavaScript, and jQuery. Performed Microsoft Dynamics 
-            365 customization activities based on client needs.
-            "
+            development of Microsoft Dynamics solutions."
             />
           </div>
           <div label="Harbourfront">
@@ -139,13 +134,13 @@ const IndexPage = ({ data }) => (
         <h2>Some Things I've Built</h2>
         <div className={style.projectCardContainer}>
           <ProjectCard
-            title="Booking Event App"
-            description="Under construction. Stay tuned!"
-            // github="https://github.com/jsoon049"
-            // gitIcon={["fab", "github"]}
-            // demoLink="https://github.com/jsoon049"
-            // demoIcon={["fas", "external-link-alt"]}
-            techStack={["React", "Node.js", "Sass", "GraphQL"]}
+            title="MyVax Mobile App"
+            description="Covid19 Vaccine Passport mobile app created for uOttaHack 2021."
+            github="https://github.com/TBBinc/MyVax_FrontEnd"
+            gitIcon={["fab", "github"]}
+            demoLink="https://github.com/jsoon049"
+            demoIcon={["fas", "external-link-alt"]}
+            techStack={["React Native"]}
           />
           <ProjectCard
             title="Movie Database App"
